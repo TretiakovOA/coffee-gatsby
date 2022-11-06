@@ -9,6 +9,7 @@ export default function Layout({ children }) {
         <div id={styles.inner}>
           <h1>
             <Link to="/">Joe's Coffee Shop</Link>
+            <Link to="/blog">Blog</Link>
           </h1>
         </div>
       </header>
