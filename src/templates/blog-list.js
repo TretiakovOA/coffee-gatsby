@@ -13,10 +13,10 @@ export default function BlogListTemplate({ data, pageContext }) {
 
   return (
     <Layout>
-      <div id="{styles.hero}">
+      <div id={styles.hero}>
         <h1>The Coffee Blog</h1>
       </div>
-      <main className="{styles.blogList}">
+      <main className={styles.blogList}>
         {data.allMarkdownRemark.edges.map(node => (
           <BlogPost
             key={node.node.id}
@@ -30,15 +30,11 @@ export default function BlogListTemplate({ data, pageContext }) {
 
       <div id={styles.pageLinks}>
         {pageContext.currentPage > 1 && (
-          <Link to={previousPage}>
-            << Previous Page
-          </Link>
+          <Link to={previousPage}>&lt;&lt; Previous Page</Link>
         )}
 
         {pageContext.currentPage < pageContext.pageCount && (
-          <Link to={nextPage}>
-            Next Page >>
-          </Link>
+          <Link to={nextPage}>Next Page &gt;&gt;</Link>
         )}
       </div>
     </Layout>
@@ -49,7 +45,7 @@ export const query = graphql`
   query BlogListQuery($skip: Int!, $limit: Int!) {
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { contentKey: { eq: "blog" }}}
+      filter: { frontmatter: { contentKey: { eq: "blog" } } }
       limit: $limit
       skip: $skip
     ) {

@@ -56,17 +56,17 @@ exports.createPages = async function({ graphql, actions }) {
     let path = "/blog"
     if (i > 0) {
       path += `/${i + 1}`
-
-      this.createPage({
-        path,
-        component: templatePath,
-        context: {
-          limit: pageSize,
-          skip: i * pageSize,
-          pageCount,
-          currentPage: i + 1,
-        },
-      })
     }
+
+    createPage({
+      path,
+      component: templatePath,
+      context: {
+        limit: pageSize,
+        skip: i * pageSize,
+        pageCount,
+        currentPage: i + 1,
+      },
+    })
   }
 }

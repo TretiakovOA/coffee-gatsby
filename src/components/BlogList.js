@@ -39,7 +39,7 @@ export default function BlogList() {
         />
       ))}
       <div>
-        <Link to="/blog">More</Link>
+        <Link to="/blog">More >></Link>
       </div>
     </div>
   )
