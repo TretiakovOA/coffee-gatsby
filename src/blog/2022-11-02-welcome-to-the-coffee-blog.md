@@ -1,7 +1,9 @@
 ---
 title: Welcome to the Coffee Blog
 date: 2022-11-02T18:55:47.636Z
+contentKey: blog
 ---
+
 ![coffee cup](/img/cup-cappuccino-coffee-800x600.jpg "A delicious cup of coffee")
 
 # Hello!

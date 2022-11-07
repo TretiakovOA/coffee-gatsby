@@ -1,5 +1,7 @@
 ---
 title: Second Blog Post
 date: 2022-11-03T17:32:30.634Z
+contentKey: blog
 ---
-T﻿his is the second blog post!
+
+This is the second blog post!
