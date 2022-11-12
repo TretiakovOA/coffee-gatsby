@@ -27,5 +27,4 @@ categories:
       - name: Hot Cocoa
         description: Steamed milk with chocolate syrup
         price: $1.49
-  - name: Bakery
 ---
